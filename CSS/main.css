@@ -13,7 +13,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   list-style: none;
-  transition: 320ms ease-in-out;
+  transition: 200ms ease-in-out;
   text-decoration: none !important;
 }
 
@@ -27,8 +27,22 @@ body {
     rgba(255, 127, 177, 1) 0%,
     rgba(245, 169, 79, 1) 100%
   );
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
   color: var(--white);
   overscroll-behavior: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
